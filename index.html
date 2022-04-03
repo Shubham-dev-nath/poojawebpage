@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/e081961e45.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+<title> </title>
+<style>
+    .container{
+		position: absolute;
+		top: 700px;
+		left: 200px;
+	}
+     .col-centered {
+    float: none;
+    margin: 0 auto;
+}
+
+.carousel-control { 
+    width: 8%;
+    width: 0px;
+}
+.carousel-control.left,
+.carousel-control.right { 
+    margin-right: 40px;
+    margin-left: 32px; 
+    background-image: none;
+    opacity: 1;
+}
+.carousel-control > a > span {
+    color: white;
+	  font-size: 29px !important;
+}
+
+.carousel-col { 
+    position: relative; 
+    min-height: 1px; 
+    padding: 5px; 
+    float: left;
+ }
+
+ .active > div { display:none; }
+ .active > div:first-child { display:block; }
+
+/*xs*/
+@media (max-width: 767px) {
+  .carousel-inner .active.left { left: -50%; }
+  .carousel-inner .active.right { left: 50%; }
+	.carousel-inner .next        { left:  50%; }
+	.carousel-inner .prev		     { left: -50%; }
+  .carousel-col                { width: 50%; }
+	.active > div:first-child + div { display:block; }
+}
+
+/*sm*/
+@media (min-width: 768px) and (max-width: 991px) {
+  .carousel-inner .active.left { left: -50%; }
+  .carousel-inner .active.right { left: 50%; }
+	.carousel-inner .next        { left:  50%; }
+	.carousel-inner .prev		     { left: -50%; }
+  .carousel-col                { width: 50%; }
+	.active > div:first-child + div { display:block; }
+}
+
+/*md*/
+@media (min-width: 992px) and (max-width: 1199px) {
+  .carousel-inner .active.left { left: -33%; }
+  .carousel-inner .active.right { left: 33%; }
+	.carousel-inner .next        { left:  33%; }
+	.carousel-inner .prev		     { left: -33%; }
+  .carousel-col                { width: 33%; }
+	.active > div:first-child + div { display:block; }
+  .active > div:first-child + div + div { display:block; }
+}
+
+/*lg*/
+@media (min-width: 1200px) {
+  .carousel-inner .active.left { left: -25%; }
+  .carousel-inner .active.right{ left:  25%; }
+	.carousel-inner .next        { left:  25%; }
+	.carousel-inner .prev		     { left: -25%; }
+  .carousel-col                { width: 25%; }
+	.active > div:first-child + div { display:block; }
+  .active > div:first-child + div + div { display:block; }
+	.active > div:first-child + div + div + div { display:block; }
+}
+
+.block {
+	width: 306px;
+	height: 230px;
+}
+
+</style>
+</head>
+<body>
+   <div class="colorc">
+       <h3>Apply this coupon</h3>
+   </div>
+   <div class="header">
+    <P>Hii There!</P>
+    <div class="underline"><u>LOG IN</u> OR <u class="underline">REGISTER</div>
+    </p>
+    <h3 class="BrandName">Welcome To The Store</h3>
+    <div class="navigation">
+      <span class="icon"><ion-icon name="search-outline"></ion-icon></span>
+      <span class="title">Search</span>
+      <span class="icon"><ion-icon name="cart-outline"></ion-icon></span>
+      <span class="title">Cart</span>
+     </div>
+   </div>
+  </div>
+
+  <div class="box" >
+  <div class="dropdown" style="position: absolute; left: 450px;">
+    <button class="dropbtn">Dropdown 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Item 1</a>
+      <a href="#">Item 2</a>
+      <a href="#">Item 3</a>
+    </div>
+  </div> 
+
+  <div class="dropdown" style="position: absolute; left: 580px;">
+    <button class="dropbtn">Store
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Item 1</a>
+      <a href="#">Item 2 </a>
+      <a href="#">Item 3</a>
+    </div>
+   </div>
+   <p>Home &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Home Decor</p>
+  </div>
+  <img src="https://cdn.shopify.com/s/files/1/2090/3151/files/desktop-banner.jpg?v=1648120296" alt="" style="width:1520px;height:500px;">
+    <br>
+    <div class="item2">
+ <div class="container">
+        <div class="row">
+          <div class="col-xs-11 col-md-10 col-centered">
+            <div id="carousel" class="carousel slide" data-ride="carousel" data-type="multi" data-interval="2500">
+              <div class="carousel-inner">
+                <div class="item active">
+                  <div class="carousel-col">
+                   <img src="https://cdn.shopify.com/s/files/1/2090/3151/products/39_186x186.jpg?v=1647961380" alt="">
+                   <p><h3>Handcrafted Wooden</h3></p>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="carousel-col">
+                     <img src="https://cdn.shopify.com/s/files/1/2090/3151/products/IMG_0029_186x186.jpg?v=1642059530" alt="">
+                     <p><h3>Beautiful Lotus Decor Urli</h3></p>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="carousel-col">
+                    <img src="https://cdn.shopify.com/s/files/1/2090/3151/products/IMG_0154_186x186.jpg?v=1643730810" alt="">
+                    <p><h3>Fragrant Dhoopbatti Cones</h3></p>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="carousel-col">
+                    <img src="https://cdn.shopify.com/s/files/1/2090/3151/products/DSC_4162_e9fa8069-c124-4206-9406-9b7126b11b50_186x186.jpg?v=1634563924" alt="">
+                    <p><h3>Lavender With Clear Quartz Pointer Smudge Bundles</h3></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+                 
+
+
+            <h2>Limited Edition<h2>
+            <div class="col-sm-3">
+              <div class="thumb-wrapper">
+                <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                <div class="img-box">
+                  <img src="https://cdn.shopify.com/s/files/1/2090/3151/products/himalayan-pink-salt-pyramid-glow-lamp-337_186x186.jpg?v=1619884444" class="img-fluid" alt="">									
+                </div>
+                <div class="thumb-content1">
+                  <h4>Rose Quartz Heart Showpiece</h4>									
+                  <div class="star-rating">
+                    <ul class="list-inline">
+                      <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                      <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                      <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                      <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                      <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                    </ul>
+                  </div>
+                  <p class="item-price"><strike>$400.00</strike> <b>$369.00</b></p>
+                  <button class="btn1"  onclick="alert('your product is added to cart!')">Add to Cart</button>
+                </div>						
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="thumb-wrapper">
+                <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                <div class="img-box">
+                  <img src="https://cdn.shopify.com/s/files/1/2090/3151/products/1_b2be777a-f435-493a-9444-63a2f0a8947c_186x186.jpg?v=1641912111" class="img-fluid" alt="Headphone">
+                </div>
+                <div class="thumb-content">
+                  <h4>Sparkly Evil Eye Pendant Necklace for Success</h4>									
+                  <div class="star-rating">
+                    <ul class="list-inline">
+                      <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                      <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                      <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                      <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                      <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                    </ul>
+                  </div>
+                  <p class="item-price"><strike>$25.00</strike> <b>$23.99</b></p>
+                  <button class="btn1"  onclick="alert('your product is added to cart!')">Add to Cart</button>
+                </div>						
+              </div>
+            </div>		
+            <div class="col-sm-3">
+              <div class="thumb-wrapper">
+                <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                <div class="img-box">
+                  <img src="https://cdn.shopify.com/s/files/1/2090/3151/products/himalayan-pink-salt-cage-glow-lamp-black-525_186x186.jpg?v=1619887197" class="img-fluid" alt="Macbook">
+                </div>
+                <div class="thumb-content">
+                  <h4>
+                    Unique Evil Eye Bracelet</h4>									
+                  <div class="star-rating">
+                    <ul class="list-inline">
+                      <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                      <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                      <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                      <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                      <li class="list-inline-item"><i class="fa fa-star-half-o"></i></li>
+                    </ul>
+                  </div>
+                  <p class="item-price"><strike>$899.00</strike> <b>$649.00</b></p>
+                  <button class="btn1"  onclick="alert('your product is added to cart!')">Add to Cart</button>
+                </div>						
+              </div>
+            </div>							
+            <div class="col-sm-3">
+              <div class="thumb-wrapper">
+                <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                <div class="img-box">
+                  <img src="https://cdn.shopify.com/s/files/1/2090/3151/products/DSC_7744_186x186.jpg?v=1607331814" class="img-fluid" alt="Nikon">
+                </div>
+                <div class="thumb-content">
+                  <h4>Wondrous Guruji Agate </h4>									
+                  <div class="star1">
+                    <ul class="list-inline">
+                      <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                      <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                      <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                      <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                      <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                    </ul>
+                  </div>
+                  <p class="item-price"><strike>$315.00</strike> <b>$250.00</b></p>
+                  <button class="btn1"  onclick="alert('your product is added to cart!')">Add to Car </button>
+                    </div>
+                  </div>
+              </div><br><br>
+
+              <h5 style="color: white;" > Special Edition</h5>
+              <div class="col-sm-3">
+                <div class="thumb-wrapper">
+                  <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                  <div class="img-box">
+                    <img src="https://cdn.shopify.com/s/files/1/2090/3151/products/himalayan-pink-salt-pyramid-glow-lamp-337_186x186.jpg?v=1619884444" class="img-fluid" alt="">									
+                  </div>
+                  <div class="thumb-content1">
+                    <h4>Wondrous Guruji Agate </h4>									
+                    <div class="star-rating">
+                      <ul class="list-inline">
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                      </ul>
+                    </div>
+                    <p class="item-price"><strike>$400.00</strike> <b>$369.00</b></p>
+                    <button class="btn1"  onclick="alert('your product is added to cart!')">Add to Cart</button>
+                  </div>						
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="thumb-wrapper">
+                  <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                  <div class="img-box">
+                    <img src="https://cdn.shopify.com/s/files/1/2090/3151/products/1_b2be777a-f435-493a-9444-63a2f0a8947c_186x186.jpg?v=1641912111" class="img-fluid" alt="Headphone">
+                  </div>
+                  <div class="thumb-content">
+                    <h4>Unique Evil Eye Bracelet</h4>									
+                    <div class="star-rating">
+                      <ul class="list-inline">
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                      </ul>
+                    </div>
+                    <p class="item-price"><strike>$25.00</strike> <b>$23.99</b></p>
+                    <button class="btn1"  onclick="alert('your product is added to cart!')">Add to Cart
+                  </div>						
+                </div>
+              </div>		
+              <div class="col-sm-3">
+                <div class="thumb-wrapper">
+                  <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                  <div class="img-box">
+                    <img src="https://cdn.shopify.com/s/files/1/2090/3151/products/himalayan-pink-salt-cage-glow-lamp-black-525_186x186.jpg?v=1619887197" class="img-fluid" alt="Macbook">
+                  </div>
+                  <div class="thumb-content">
+                    <h4>Macbook Air</h4>									
+                    <div class="star-rating">
+                      <ul class="list-inline">
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star-half-o"></i></li>
+                      </ul>
+                    </div>
+                    <p class="item-price"><strike>$899.00</strike> <b>$649.00</b></p>
+                    <button class="btn1"  onclick="alert('your product is added to cart!')">Add to Cart</button>
+                  </div>						
+                </div>
+              </div>								
+              <div class="col-sm-3">
+                <div class="thumb-wrapper">
+                  <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                  <div class="img-box">
+                    <img src="https://cdn.shopify.com/s/files/1/2090/3151/products/DSC_7744_186x186.jpg?v=1607331814" class="img-fluid" alt="Nikon">
+                  </div>
+                  <div class="thumb-content">
+                    <h4>Sparkly Evil Eye Pendant Necklace for Success</h4>									
+                    <div class="star1">
+                      <ul class="list-inline">
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                      </ul>
+                    </div>
+                    <p class="item-price"><strike>$315.00</strike> <b>$250.00</b></p>
+                    <button class="btn1"  onclick="alert('your product is added to cart!')">Add to Cart</button> </div></div></div><br><br><br><br><br><br><br><br><br><br></div>
+           <br><br><br><br><br><br><br><br><br><br>   
+
+          <div class="info"> 
+            <span class="icon" style="font-size: 30px;"> <i class='fas'>&#xf48b;</i></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <spnan class="title" style="position: absolute;"><h2>Fast Delivery</h2></spnan>
+            <span class="icon" style="position: absolute; right: 800px; font-size: 30px;" > <ion-icon name="cash-outline"></ion-icon></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <spnan class="title" style="position: absolute; right: 550px; "><h2>Cash On Delivery</h2></spnan>
+            <span class="icon" style="position: absolute; right: 380px; font-size: 30px;"> <ion-icon name="reload-outline"></ion-icon></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <spnan class="title" style="position: absolute; right: 190px;"><h2>Easy Return</h2></spnan></div></div><br><br><br>
+      
+            <p style="cursor: text;">My Pooja Box - Your One-stop Puja Samagri Store
+              Being a one-stop pooja samagri online store in India, My Pooja Box bridges the gap between devotees and devotion. We have sorted all your devotional needs by putting forth a wide assortment of products by making it easier for you buy pooja items online. Hindu religion is a potpourri of traditions and ceremonies. Each religious occasion demands for special items as per the rituals. The concept of My Pooja Box revolves around bringing every required product on a single platform. We help you buy pooja items online in India. Decorative pooja thalis, dhoop, hawan samagri, god’s idols etc., we have a wide line-up of products to choose from. The idols and thalis will give you a glimpse of incredible Indian craftsmanship. Don’t worry if you need a pooja mandir for home to install the figurines of Gods and Goddesses. My Pooja Box has a wide variety of temples in brass and wooden materials and other pooja samagri store as well. Our range also includes home decor gift items oozing with traditional charm and modern aesthetics. Beautiful tea light scented candles, lanterns, wall hangings, showpieces, and more, choose from a wide list! Those looking for feng shui products also need not go anywhere else. Our assorted collection brings you laughing buddha figurines, tortoise statues, coin trees, owl figurines, and more in just a few clicks. We even possess all your Christmas and Christmas tree decorations, that you require to get with the festive vibes! So, buy havan samagri dhoop, puja store online right from the comfort of your couch to fulfil your religious needs.
+              Worshipping your deity with pure pooja items online offers eternal peace and joy. Hymn the name of your revered god is main path to spirituality. Pooja is an integral a part of Hindu culture and throughout the year, we tend to celebrate the pooja of various Hindu gods and goddesses. It is the only way to connect yourself to your inner soul and at the same time connect yourself to the god and gurus. It entails the use of various numbers of materials. Varied spiritual and religious accessories embellish the mind with clean thoughts. Several foremost vital Pooja items online embody god and god idols, diyas, garland, mukut, sculptures, camphor, puja thali, chandan, haldi, kumkum, bell, and many others.
+              The other religious or puja items like Rudrakshas, Panchpatra, Saligrama, dry fruits, and flower help make feel spiritually. Akshat is unbroken rice grains that are offered to god so as to achieve wealth and prosperity. They are offered to the deities while chanting. Bhasma or vibhuthi protects the user from health problem and evil by purifying him or her.
+              Pooja samagri online shopping of incense sticks facilitate to create ambiance for spiritual forces in and around us. Ever since time immortal, incense has been accustomed kindle moods. The divine fragrance that are pervaded by dhoop incense sticks calm the mind and carry the spirits and enlivens the environment.
+              Indians are very spiritual and traditional. We believe in many gods and goddesses, believing them to bless us with a good life and prosperity.</p>
+           <div class="footer">
+             <div class="fcontainer">
+             <h3>My Pooja Box</h3><br>
+             <p>The Art Of Gifting</p>
+             <br><br>
+            <div class="icon-bar">
+              <ion-icon name="logo-facebook" style="font-size: 24px;"></ion-icon>&nbsp;&nbsp;
+              <ion-icon name="logo-instagram" style="font-size: 24px;"></ion-icon>&nbsp;&nbsp;
+              <ion-icon name="logo-twitter" style="font-size: 24px;"></ion-icon>&nbsp;&nbsp;
+              <i style="font-size:24px" class="fa">&#xf0d5;</i></div>
+              </div>
+              <div class="customercare">
+              <h3>CUSTOMER CARE</h3><br>
+                <p>Phone: +91 8010288882 | +91 801018888</p><br>
+                 <p> Email: orders@mypoojabox.com<p>
+                </div>
+                <div class="info2">
+              <h3>INFORMATION </h3><br>
+              </p> Track your Order &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns and Refunds<p>
+                <p>Daily Horoscope &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Holiday List<p>
+               <p> Terms & Conditions &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Artist <p>  
+                <p>Privacy Policy&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Blog</p>
+               <p> FAQ</p>
+                
+              </div>
+              <div class="about">
+                <h3>ABOUT MY POOJA BOX</h3><br>
+                 <p> Contact Us</p><br>
+                    <p>About Us</p><br>
+                    <p>Corporate Enquiry</p><br>
+                   <p> Exchange/Cancel My Order</p></div>
+              <div class="sep2"></div>
+              <div class="sep1"></div>
+              <div class="sep3"></div>
+            </div>
+           
+                       
+
+                      
+                      
+      <script>
+        $('.carousel[data-type="multi"] .item').each(function() {
+var next = $(this).next();
+if (!next.length) {
+next = $(this).siblings(':first');
+}
+next.children(':first-child').clone().appendTo($(this));
+
+for (var i = 0; i < 2; i++) {
+next = next.next();
+if (!next.length) {
+  next = $(this).siblings(':first');
+}
+
+next.children(':first-child').clone().appendTo($(this));
+}
+});
+   
+
+</script>
+
+ 
+</body>
+
+</html>

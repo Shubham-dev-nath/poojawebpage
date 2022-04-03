@@ -1,0 +1,222 @@
+
+
+  .colorc {
+  animation: pulse 5s infinite;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 50px;
+  overflow: hidden;
+  box-sizing: border-box;
+  background-color: palevioletred;
+  
+  }
+  
+  .colorc:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 100%;
+  animation: load 5s infinite;
+  
+  }
+  .colorc h3{
+      text-align: center;
+  }
+  @keyframes pulse {
+  50% {
+  background: burlywood;
+  }
+   
+  }
+
+  .header {
+    background-color: white;
+    padding: 5px;
+    
+     }
+     .underline{
+      cursor: pointer;
+     font-size: 15px; }
+
+    .BrandName{
+        position: absolute;
+        left: 650px;
+        top: 70px;
+        cursor: pointer
+    }
+    .navigation{
+        position: absolute;
+        right: 80px;
+        top: 80px;
+        font-size: 20px;
+        cursor: pointer; }
+      
+          
+          .box {
+            background-color: HotPink;
+            height: 50px;
+            width: none;
+            position: relative;
+            cursor: text;
+          
+            }
+            .box p{
+                position: absolute;
+                left: 700px;
+                top: 12px;
+                cursor: pointer;
+                font-size: 16px;  
+
+            }
+          
+
+            .dropdown {
+             overflow: hidden;
+             
+            }
+
+                .dropdown .dropbtn {
+                    font-size: 16px;  
+                    border: none;
+                    outline: none;
+                    color: black;
+                    padding: 14px 30px;
+                    background-color: inherit;
+                    font-family: inherit;
+                    margin: 0;
+                    cursor: pointer;
+                  }
+                  
+                  
+                  .dropdown-content {
+                    display: none;
+                    position: relative;
+                    background-color: white;
+                    min-width: 160px;
+                    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                    z-index: 1;
+                  }
+                  
+                  .dropdown-content a {
+                    float: none;
+                    color: black;
+                    padding: 12px 16px;
+                    text-decoration: none;
+                    display: block;
+                    text-align: center;
+                  }
+                  
+                  .dropdown-content a:hover {
+                    background-color: #ddd;
+                  }
+                  
+                  .dropdown:hover .dropdown-content {
+                    display: block;
+                  }
+
+
+                  .container-xl{
+                    position: absolute;
+                    top: 1000px;
+                    right: 350px;
+                }
+               .btn1{
+                color: black;
+                font-size: 11px;
+                text-transform: uppercase;
+                font-weight: bold;
+                background: none;
+                border: 1px solid black;
+                padding: 6px 55px;
+                margin-top: 5px;
+                line-height: 16px;
+              border-radius: 4px;
+               }
+               .btn1:hover, .btn1:focus {
+                color: #fff;
+                background: red;
+                box-shadow: none;
+              }
+              .list-inline-item {
+                font-size: 14px;
+                color: #ffc000;
+              }
+              .item-price {
+                font-size: 13px;
+                padding: 2px 0;
+                cursor:text;
+              }
+              .item-price strike {
+                opacity: 0.7;
+                margin-right: 5px;
+              }
+             .wish-icon {
+                cursor: pointer;
+                font-size: 16px;
+                color: #abb0b8;
+              }
+              .wish-icon:hover {
+                color: #ff6161;}
+             
+
+            
+
+             .footer{
+               background-color: pink;
+               width: 1520px;
+               height: 400px;
+               position: absolute;
+               right: -150px;
+               cursor: context-menu;
+               
+             }
+             .fcontainer{
+               position: absolute;
+               left:  80px;
+               cursor: pointer;
+             }
+            .sep1{
+              
+                border-left: 2px solid white;
+                height: 300px;
+                position: absolute;
+                margin-left: -3px;
+                left: 270px;
+              
+            }
+            .sep2{
+              
+              border-left: 2px solid white;
+              height: 300px;
+              position: absolute;
+              margin-left: -3px;
+              left: 1150px;
+            
+          }
+          .sep3{
+            border-left: 2px solid white;
+            height: 300px;
+            position: absolute;
+            margin-left: -3px;
+            left: 600px;
+          }
+            .customercare{
+              position: absolute;
+              left: 300px;
+              cursor: pointer;
+            }
+            
+            .info2{
+
+              position: absolute;
+              left: 700px;
+              cursor: pointer;
+            }
+            .about{
+              position: absolute;
+              left: 1200px;
+              cursor: pointer;
+            }
+            
